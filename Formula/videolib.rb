@@ -11,7 +11,7 @@ class Videolib < Formula
   depends_on "yt-dlp"
   depends_on "ffmpeg"
 
-  revision 2
+  revision 3
 
   resource "anyio" do
     url "https://files.pythonhosted.org/packages/a9/d2/f4d173e22df740bc37b1db102b386ba719b66e95b0f0d751f556b387e6d2/anyio-4.15.1.tar.gz"
@@ -69,7 +69,7 @@ class Videolib < Formula
     log_path var/"log/videolib/videolib.log"
     error_log_path var/"log/videolib/videolib.err.log"
     working_dir var/"lib/videolib"
-    environment_variables VIDEOLIB_ENV_FILE: "#{Dir.home}/.config/videolib/.env", PATH: "#{HOMEBREW_PREFIX}/bin:#{HOMEBREW_PREFIX}/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
+    environment_variables VIDEOLIB_ENV_FILE: "#{Dir.home}/.config/videolib/.env", PATH: "#{HOMEBREW_PREFIX}/bin:#{HOMEBREW_PREFIX}/sbin:/usr/bin:/bin:/usr/sbin:/sbin", DOWNLOAD_DIR: "/tmp/videolib"
   end
 
   def post_install
