@@ -3,8 +3,8 @@ class Videolib < Formula
 
   desc "Telegram bot that downloads and delivers videos via yt-dlp"
   homepage "https://github.com/motiko/VideoLib"
-  url "https://github.com/motiko/VideoLib/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "25455dff97ffda4a41899081a10cd6dce8cbbdb5df37397dfc8ee2353c7e3102"
+  url "https://github.com/motiko/VideoLib/archive/refs/tags/v1.1.1.tar.gz"
+  sha256 "01cf282a6dd3aac03ee4f7dfa4baec293274484252b5cd2ba7b821f645456ac2"
   license "MIT"
 
   depends_on "python@3.12"
